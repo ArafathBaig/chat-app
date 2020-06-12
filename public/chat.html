@@ -19,7 +19,7 @@
 
                 <div class="compose">
                     <form id="message-form">
-                        <input name="message" type="text" placeholder="Message">
+                        <input name="message" type="text" placeholder="Message" required autocomplete="off">
                         <button id="increment">Send</button>
                      </form>
             
@@ -35,7 +35,7 @@
     <script id="message-template" type="text/html">
         <div class="message">
             <p>
-                <span class="message__name"></span>
+                <span class="message__name">{{username}}</span>
                 <span class="message__meta">{{createdAt}}</span>
             </p>
             <p>{{message}}</p>
